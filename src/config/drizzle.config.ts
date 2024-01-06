@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import type { Config } from 'drizzle-kit';
 import 'dotenv/config';
 

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export interface DatabaseConfig {
   host: string | undefined;
   port: number;

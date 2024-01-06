@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { FactoryProvider, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { drizzle } from 'drizzle-orm/node-postgres';
