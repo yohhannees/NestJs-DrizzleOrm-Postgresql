@@ -1,0 +1,8 @@
+{
+  "schema": "./src/drizzle/schema.ts",
+  "out": "./drizzle",
+  "driver": "pg",
+  "dbCredentials": {
+    "connectionString": "postgresql://postgres:etata30@localhost:5432/postgres"
+  }
+}

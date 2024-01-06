@@ -1,12 +1,15 @@
 /* eslint-disable prettier/prettier */
-import type { Config } from 'drizzle-kit';
 import 'dotenv/config';
+import type { Config } from 'drizzle-kit';
 
 export default {
   schema: './src/drizzle/schema.ts',
-  out: './src/drizzle/migrations',
-  driver: 'pg',
+  out: './drizzle',
+  driver: 'pg', // 'pg' | 'mysql2' | 'better-sqlite' | 'libsql' | 'turso'
   dbCredentials: {
-    connectionString: process.env.DATABASE_URL as string,
+    host: process.env.DATABSE_HOST as string,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE_NAME as string,
   },
 } satisfies Config;

@@ -11,6 +11,7 @@ export const users = pgTable('users', {
   email: text('email'),
 });
 
+
 export const address = pgTable('table', {
   id: serial('id').primaryKey(),
   street: text('street'),
